@@ -1,0 +1,44 @@
+{
+	"bootstrapped": true,
+	"ignore_vcs_packages": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Alignment",
+		"All Autocomplete",
+		"AngularJS",
+		"AutoFileName",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Compare Side-By-Side",
+		"CSS3",
+		"DocBlockr",
+		"EditorConfig",
+		"Emmet",
+		"Gist",
+		"Google Closure Template snippets",
+		"HTML-CSS-JS Prettify",
+		"HTMLBeautify",
+		"Javascript Beautify",
+		"JavaScript Completions",
+		"JSHint",
+		"Markdown Preview",
+		"Package Control",
+		"Predawn",
+		"Razor",
+		"Sass",
+		"SassBeautify",
+		"SideBarEnhancements",
+		"SideBarFolders",
+		"SimpleTODO",
+		"Soy",
+		"Stylus",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"Theme - Dark Material",
+		"Web Inspector"
+	]
+}
