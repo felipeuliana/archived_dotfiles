@@ -1,0 +1,62 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 255
+        green: 213
+        blue: 79
+        alpha: 1
+      accentColor:
+        red: 162
+        green: 136
+        blue: 50
+        alpha: 1
+      predefinedColor: "Amber"
+    fonts:
+      fontSize: 14
+    tabs: {}
+    treeView:
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+  core:
+    audioBeep: false
+    autoHideMenuBar: true
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "linter-eslint"
+      "emmet-snippets-compatibility"
+      "language-go"
+      "language-make"
+      "language-objective-c"
+      "language-perl"
+      "language-php"
+      "language-ruby-on-rails"
+      "language-toml"
+      "welcome"
+    ]
+    projectHome: "[PROJECT FOLDER]"
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  editor:
+    backUpBeforeSaving: true
+    fontFamily: "fira code"
+    showIndentGuide: true
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "[TOKEN]"
+  "sync-settings":
+    _analyticsUserId: "[TOKEN]"
+    gistId: '''
+      [TOKEN]
+      Last active 3 days ago
+
+    '''
+    personalAccessToken: "[TOKEN]"
+  welcome:
+    showOnStartup: false

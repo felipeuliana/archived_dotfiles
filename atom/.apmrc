@@ -1,0 +1,5 @@
+https-proxy=http://https://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
+http-proxy=http://https://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
+proxy=http://https://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
+strict-ssl=false
+msvs_version = "2012"
