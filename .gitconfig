@@ -1,0 +1,32 @@
+[color]
+	ui = true
+
+[core]
+	autocrlf = true
+
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[http]
+  proxy = http[s]://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
+
+[http]
+[https]
+  proxy = https://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
+
+[url "git://"]
+[url "http://"]
+[url "https://"]
+[url "http://github.com/"]
+[url "https://github.com/"]
+[url "https://"]
+  insteadOf = git://
+
+[url "https://github.com/"]
+  insteadOf = git@github.com:
+
+[user]
+  name = [YOUR NAME]
+  email = [USER]@[DOMAIN]
