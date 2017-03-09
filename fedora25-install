@@ -1,0 +1,49 @@
+# fedora 25 post-installation
+#!/bin/bash
+
+# update system
+echo "Updating your System"
+dnf update
+
+# update developer tools
+dnf groupinstall 'Development Tools' && dnf install curl git irb python-setuptools ruby
+
+# activate rpmfusion repository
+rpm -ivh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-25.noarch.rpm
+
+# install java web plugins
+dnf install java-openjdk icedtea-web
+
+# install file compression and archiving utilities
+dnf install unzip p7zip
+
+# install gnome tweak tool
+dnf install gnome-tweak-tool
+
+# install fedy
+curl https://www.folkswithhats.org/installer | bash
+
+# install spotify ;)
+dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+dnf install spotify-client
+
+echo "Installing Development Tools"
+
+# install sass
+gem install sass
+
+# install nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+
+# install node.js
+nvm install node stable
+
+# install cli tools
+npm i -g bower yarn gulp grunt-cli yo foundation-cli ember-cli
+
+# install linuxbrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+PATH="$HOME/.linuxbrew/bin:$PATH"
+
+
+echo "Ok, Your system is ready!"
