@@ -1,0 +1,15 @@
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+
+# Tips:
+# - <type>: feat; fix; build; chore; ci; docs; style; refactor; perf; test.
+# - It's recommended to use a maximum of 50 characters for the subject and 72 for the body.
+# - Use the message body to explain "why", "for what", "how" and additional details.
+# - Use the message "BREAKING CHANGE:" and/or appends a "!" after the <type>[scope], when a breaking API change (MAJOR in Semantic Versioning), in commits of any type.
+#
+# References:
+# - https://www.conventionalcommits.org/pt-br/v1.0.0/#resumo
+# - https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_pt-BR.md
