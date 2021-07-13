@@ -1,32 +1,51 @@
+[advice]
+  statusHints = false
+[alias]
+  cob = checkout -b
+  smf = submodule foreach
+  develop = !git co develop && git f -a && git pr
+  qa = !git co qa && git f -a && git pr
+  ti = !git co ti && git f -a && git pr
+  feature = !git create feature $1
+  release = !git create release $1
+  hotfix = !git create hotfix $1
+  create = "!f(){ \
+    topic_branch=\"$1/$2\"; \
+    base_branch="develop"; \
+    git checkout \"$base_branch\"; git pull; \
+    git checkout -b \"$topic_branch\" \"$base_branch\"; \
+  };f"
 [color]
-	ui = true
-
+  ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  frag = magenta bold
+  meta = yellow bold
+  new = green bold
+  old = red bold
 [core]
-	autocrlf = true
-
+  autocrlf = false
+  editor = subl -w
+  excludesfile = ~/.yadr/git/gitignore
+[commit]
+  template = ~/.gitmessage.txt
+[diff]
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
-
-[http]
-  proxy = http[s]://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
-
-[http]
-[https]
-  proxy = https://[DOMAIN]%5C[USER]:[PASSWORD]@[PROXY]:[PORT]
-
-[url "git://"]
-[url "http://"]
-[url "https://"]
-[url "http://github.com/"]
-[url "https://github.com/"]
-[url "https://"]
-  insteadOf = git://
-
-[url "https://github.com/"]
-  insteadOf = git@github.com:
-
+  clean = git-lfs clean %f
+  required = true
+  smudge = git-lfs smudge %f
+[format]
+  pretty = format: %C(blue)%ad%Creset %C(yellow)%h %C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+[include]
+  path = ./gitalias/gitalias.txt
 [user]
-  name = [YOUR NAME]
-  email = [USER]@[DOMAIN]
+  name = Felipe Uliana
+  email = v.uliana@gmail.com
+[init]
+  defaultBranch = main
