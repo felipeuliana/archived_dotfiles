@@ -11,5 +11,5 @@
 # - Use the message "BREAKING CHANGE:" and/or appends a "!" after the <type>[scope], when a breaking API change (MAJOR in Semantic Versioning), in commits of any type.
 #
 # References:
-# - https://www.conventionalcommits.org/pt-br/v1.0.0/#resumo
-# - https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README_pt-BR.md
+# - https://www.conventionalcommits.org/en/v1.0.0/#summary
+# - https://github.com/RomuloOliveira/commit-messages-guide/blob/master/README.md
